@@ -34,7 +34,7 @@ nthPrime :: Int -> Int
 nthPrime = (!!) primes
 
 primes :: [Int]
-primes = 2 : 3 : filter (isPrime primes) [5..]
+primes = 2 : 3 : filter (isPrime primes) [5, 7 ..]
 
 isPrime :: [Int] -> Int -> Bool
 isPrime (p:ps) n
